@@ -36,7 +36,7 @@ ${inside}
 <p>After</p>
 `
 
-test('fromHTML', t => {
+test('from-html', t => {
   t.is(getFirstCodeBlock(fromHTML(tagsInOneLine, ['test'])), inside)
   t.is(getFirstCodeBlock(fromHTML(allInOneLine, ['test'])), inside)
   t.is(getFirstCodeBlock(fromHTML(onMultipleLines, ['test'])), inside)

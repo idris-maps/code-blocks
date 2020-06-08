@@ -1,0 +1,32 @@
+{
+  "name": "@code-blocks/from-md",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Anders <idris.maps@gmx.ch>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "ava",
+    "build": "tsc",
+    "test:verbose": "ava --verbose"
+  },
+  "ava": {
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
+  },
+  "devDependencies": {
+    "@code-blocks/types": "^0.0.0"
+  }
+}
