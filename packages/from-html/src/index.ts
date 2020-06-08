@@ -1,5 +1,5 @@
 import { flatten } from 'ramda'
-import { PartCode, PartOther, Part } from '@code-blocks/types'
+import { Part, parseAllLanguages, LanguagesToParse } from '@code-blocks/types'
 
 interface PreSplit {
   isPre: boolean
@@ -18,7 +18,7 @@ const splitPre = (html: string): PreSplit[] =>
     })
   )
 
-const parsePreSplit = (languages: string[]) =>
+const parsePreSplit = (languages: LanguagesToParse) =>
   ({ isPre, content }: PreSplit): Part => {
     if (!isPre) {
       return {
@@ -30,7 +30,7 @@ const parsePreSplit = (languages: string[]) =>
     const [codeAttributes, ...rest] = noCode.split('>')
     const code = rest.join('>').split('</code>')[0]
     const language = codeAttributes.split('class="language-')[1].split('"')[0]
-    if (languages.includes(language)) {
+    if (parseAllLanguages(languages) || languages.includes(language)) {
       return {
         type: 'code',
         language,
@@ -43,6 +43,6 @@ const parsePreSplit = (languages: string[]) =>
     }
   }
 
-export default (html: string, languages: string[]) => {
+export default (html: string, languages: LanguagesToParse) => {
   return splitPre(html).map(parsePreSplit(languages))
 }

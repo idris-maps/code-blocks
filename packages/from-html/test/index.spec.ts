@@ -41,5 +41,13 @@ test('fromHTML', t => {
   t.is(getFirstCodeBlock(fromHTML(allInOneLine, ['test'])), inside)
   t.is(getFirstCodeBlock(fromHTML(onMultipleLines, ['test'])), inside)
 
-  t.true(fromHTML(otherLanguage, ['test']).every(isPartOther))
+  t.true(
+    fromHTML(otherLanguage, ['test']).every(isPartOther),
+    'should ignore not defined languages'
+  )
+  t.is(
+    getFirstCodeBlock(fromHTML(otherLanguage, '*')),
+    inside,
+    'should parse if languages set to all'
+  )
 })

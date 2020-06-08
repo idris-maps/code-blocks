@@ -19,3 +19,8 @@ export const isPartOther = (part: Part): part is PartOther =>
 
 export const isPart = (d: any): d is Part =>
   d && d.type && d.content && (isPartCode(d) || isPartOther(d))
+
+export type LanguagesToParse = string[] | '*'
+
+export const parseAllLanguages = (d: LanguagesToParse): d is '*' =>
+  d === '*'
