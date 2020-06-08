@@ -1,0 +1,17 @@
+{
+  "name": "@code-blocks/types",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Anders <idris.maps@gmx.ch>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "index.d.ts"
+  ],
+  "scripts": {
+    "test": "echo \"@code-blocks/types has no tests\"",
+    "build": "tsc"
+  }
+}

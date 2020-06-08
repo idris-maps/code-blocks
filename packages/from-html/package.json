@@ -1,0 +1,36 @@
+{
+  "name": "@code-blocks/from-html",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Anders <idris.maps@gmx.ch>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "directories": {
+    "dist": "dist"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "ava",
+    "build": "tsc",
+    "test:verbose": "ava --verbose"
+  },
+  "dependencies": {
+    "@code-blocks/types": "^0.0.0",
+    "ramda": "^0.27.0"
+  },
+  "devDependencies": {
+    "@types/ramda": "^0.27.6"
+  },
+  "ava": {
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
+  }
+}
