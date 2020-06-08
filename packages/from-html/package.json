@@ -32,5 +32,9 @@
     "require": [
       "ts-node/register"
     ]
+  },
+  "gitHead": "7ace617f883c23290eca5cf4571bc19f824885fd",
+  "publishConfig": {
+    "access": "public"
   }
 }

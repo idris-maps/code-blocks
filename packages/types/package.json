@@ -13,5 +13,9 @@
   "scripts": {
     "test": "echo \"@code-blocks/types has no tests\"",
     "build": "tsc"
+  },
+  "gitHead": "7ace617f883c23290eca5cf4571bc19f824885fd",
+  "publishConfig": {
+    "access": "public"
   }
 }
