@@ -14,7 +14,7 @@ import {
 
 ### `getMeta`
 
-Extracts meta data from front-matter. Takes the content of a code block and returns an object with two keys `,eta` (a JSON object with the meta data) and `content` (the rest of the code block).
+Extracts meta data from front-matter. Takes the content of a code block and returns an object with two keys `meta` (a JSON object with the meta data) and `content` (the rest of the code block).
 
 ### `parseDsv`
 

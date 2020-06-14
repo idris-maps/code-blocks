@@ -35,5 +35,6 @@
   },
   "devDependencies": {
     "@types/ramda": "^0.27.6"
-  }
+  },
+  "gitHead": "7800aa10940af0597843d4b02f2a547f06f657b0"
 }
