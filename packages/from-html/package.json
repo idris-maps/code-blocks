@@ -33,7 +33,7 @@
       "ts-node/register"
     ]
   },
-  "gitHead": "7ace617f883c23290eca5cf4571bc19f824885fd",
+  "gitHead": "a2f544787b33dc5f5552e37b097436816dcdf9c3",
   "publishConfig": {
     "access": "public"
   }
