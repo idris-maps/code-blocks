@@ -1,11 +1,3 @@
-# `types`
+# `@code-blocks/types`
 
-> TODO: description
-
-## Usage
-
-```
-const types = require('types');
-
-// TODO: DEMONSTRATE API
-```
+The type definitions for `@code-blocks`

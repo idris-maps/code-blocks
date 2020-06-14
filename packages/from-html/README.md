@@ -1,11 +1,33 @@
-# `fromHTML`
+# `@code-blocks/from-html`
 
-> TODO: description
+Extracts code blocks from HTML.
 
 ## Usage
 
-```
-const fromHtml = require('fromHTML');
+```ts
+import fromHTML from '@code-blocks/from-html'
 
-// TODO: DEMONSTRATE API
+fromHTML(someHTML, ['line-chart', 'csv-table'])
+```
+
+Takes tow arguments:
+
+* `html` a string containing HTML
+* `languages` an array of languages to extract
+
+Returns an array of parts:
+
+```ts
+export interface PartCode {
+  type: 'code'
+  language: string
+  content: string
+}
+
+export interface PartOther {
+  type: 'other'
+  content: string
+}
+
+export type Part = PartCode | PartOther
 ```
