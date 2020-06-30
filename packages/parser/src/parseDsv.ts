@@ -1,4 +1,5 @@
 import { trim } from 'ramda'
+import { DsvDataItem } from '@code-blocks/types'
 
 const castType = (cell: string): boolean | number | string => {
   if (cell === 'true') { return true }
@@ -14,12 +15,8 @@ const separateLine = (separator: string) =>
       .split(separator)
       .map(trim)
 
-export interface DsvDataItem {
-  [key: string]: boolean | number | string
-}
-
 export default (separator: string) =>
-  (content: string): DsvDataItem[] => {
+  (content: string): { data: DsvDataItem[], head: string[] } => {
     const [head, ...body] = content.split('\n').map(separateLine(separator))
     const data = body
       .map(line =>
@@ -34,5 +31,5 @@ export default (separator: string) =>
         ${content}
       `)
     }
-    return data
+    return { head, data }
   }

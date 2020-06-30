@@ -24,3 +24,14 @@ export type LanguagesToParse = string[] | '*'
 
 export const parseAllLanguages = (d: LanguagesToParse): d is '*' =>
   d === '*'
+
+export interface DsvDataItem {
+  [key: string]: boolean | number | string
+}
+
+export interface Meta {
+  [key: string]: any
+}
+
+export type Renderer = (languages: LanguagesToParse) =>
+  (part: Part) => Promise<Part>

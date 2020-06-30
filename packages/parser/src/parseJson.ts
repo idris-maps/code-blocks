@@ -5,6 +5,4 @@ export const replace = (toRemove: string, toAdd: string) =>
     string.split(toRemove).join(toAdd)
 
 export default <T = any>(content: string): T =>
-  JSON.parse(
-    pipe(trim, replace('&quot;', '"'))(content)
-  )
+  pipe(trim, replace('&quot;', '"'), JSON.parse)(content)

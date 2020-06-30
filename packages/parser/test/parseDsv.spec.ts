@@ -21,9 +21,9 @@ const semicolonSeparatedValues = toString(';', [head, ...body])
 const notDsv = 'Not a dsv'
 
 test('parser parseDsv', t => {
-  t.deepEqual(parseDsv(',')(csv), expected)
-  t.deepEqual(parseDsv('\t')(tsv), expected)
-  t.deepEqual(parseDsv(';')(semicolonSeparatedValues), expected)
+  t.deepEqual(parseDsv(',')(csv).data, expected)
+  t.deepEqual(parseDsv('\t')(tsv).data, expected)
+  t.deepEqual(parseDsv(';')(semicolonSeparatedValues).data, expected)
   try {
     parseDsv(',')(notDsv)
     t.fail()

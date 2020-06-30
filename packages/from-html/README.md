@@ -10,7 +10,7 @@ import fromHTML from '@code-blocks/from-html'
 fromHTML(someHTML, ['line-chart', 'csv-table'])
 ```
 
-Takes tow arguments:
+Takes two arguments:
 
 * `html` a string containing HTML
 * `languages` an array of languages to extract

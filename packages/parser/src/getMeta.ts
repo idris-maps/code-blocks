@@ -1,8 +1,5 @@
 import frontmatter from 'front-matter'
-
-export interface Meta {
-  [key: string]: any
-}
+import { Meta } from '@code-blocks/types'
 
 export default <T = Meta>(codeblock: string) => {
   const { attributes, body } = frontmatter<T>(codeblock.trim())

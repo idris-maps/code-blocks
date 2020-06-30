@@ -1,5 +1,5 @@
 {
-  "name": "@code-blocks/parser",
+  "name": "@code-blocks/charts",
   "version": "0.0.0",
   "description": "> TODO: description",
   "author": "Anders <idris.maps@gmx.ch>",
@@ -13,17 +13,16 @@
   "files": [
     "dist"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
   "scripts": {
     "test": "ava",
     "build": "tsc",
     "test:verbose": "ava --verbose"
   },
   "dependencies": {
-    "front-matter": "^4.0.2",
-    "ramda": "^0.27.0"
+    "@code-blocks/parser": "^0.0.0",
+    "@code-blocks/types": "^0.0.0",
+    "vega": "^5.13.0",
+    "vega-lite": "^4.13.1"
   },
   "ava": {
     "extensions": [
@@ -33,9 +32,7 @@
       "ts-node/register"
     ]
   },
-  "devDependencies": {
-    "@code-blocks/types": "^0.0.0",
-    "@types/ramda": "^0.27.6"
-  },
-  "gitHead": "7800aa10940af0597843d4b02f2a547f06f657b0"
+  "publishConfig": {
+    "access": "public"
+  }
 }

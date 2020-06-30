@@ -1,9 +1,7 @@
-import getMeta from './getMeta'
-import parseDsv from './parseDsv'
-import parseJson from './parseJson'
+import _getMeta from './getMeta'
+import _parseDsv from './parseDsv'
+import _parseJson from './parseJson'
 
-export default {
-  getMeta,
-  parseDsv,
-  parseJson,
-}
+export const getMeta = _getMeta
+export const parseDsv = _parseDsv
+export const parseJson = _parseJson
