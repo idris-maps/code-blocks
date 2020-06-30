@@ -21,3 +21,5 @@ const part: Part = {
 charts()(part)
   .then(notCodePart => ) // { type: 'other', content: `<div class="chart"><svg>...</svg></div>` }
 ```
+
+Takes an optional argument `languages` (defaults to `*`) and returns an async function that takes a `Part` and returns a `Part`
