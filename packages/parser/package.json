@@ -1,6 +1,6 @@
 {
   "name": "@code-blocks/parser",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Code block parser",
   "author": "idris-maps",
   "license": "GPLv2",
@@ -33,7 +33,7 @@
     ]
   },
   "devDependencies": {
-    "@code-blocks/types": "^0.0.0",
+    "@code-blocks/types": "^0.0.1",
     "@types/ramda": "^0.27.6"
   },
   "repository": {

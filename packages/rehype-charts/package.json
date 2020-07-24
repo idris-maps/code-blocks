@@ -1,6 +1,6 @@
 {
   "name": "@code-blocks/rehype-charts",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A rehype transformer to add svg charts from code-blocks",
   "author": "idris-maps",
   "keywords": [
@@ -22,8 +22,8 @@
     "test": "echo \"rehype-charts has no tests\""
   },
   "dependencies": {
-    "@code-blocks/charts": "^0.0.0",
-    "@code-blocks/rehype-wrapper": "^0.0.0"
+    "@code-blocks/charts": "^0.0.1",
+    "@code-blocks/rehype-wrapper": "^0.0.1"
   },
   "devDependencies": {
     "rehype-stringify": "^8.0.0",
