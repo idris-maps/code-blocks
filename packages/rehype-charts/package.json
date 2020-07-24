@@ -1,9 +1,15 @@
 {
   "name": "@code-blocks/rehype-charts",
   "version": "0.0.0",
-  "description": "> TODO: description",
+  "description": "A rehype transformer to add svg charts from code-blocks",
   "author": "Anders <idris.maps@gmx.ch>",
-  "homepage": "",
+  "keywords": [
+    "rehype",
+    "charts",
+    "csv",
+    "vega",
+    "vegalite"
+  ],
   "license": "ISC",
   "main": "index.js",
   "files": [
