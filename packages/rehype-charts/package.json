@@ -2,7 +2,7 @@
   "name": "@code-blocks/rehype-charts",
   "version": "0.0.0",
   "description": "A rehype transformer to add svg charts from code-blocks",
-  "author": "Anders <idris.maps@gmx.ch>",
+  "author": "idris-maps",
   "keywords": [
     "rehype",
     "charts",
@@ -10,7 +10,7 @@
     "vega",
     "vegalite"
   ],
-  "license": "ISC",
+  "license": "GPLv2",
   "main": "index.js",
   "files": [
     "index.js"
@@ -31,5 +31,10 @@
     "remark-rehype": "^7.0.0",
     "unified": "^9.1.0",
     "unified-stream": "^1.0.6"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/idris-maps/code-blocks.git"
+  },
+  "homepage": "https://github.com/idris-maps/code-blocks/tree/master/packages/rehype-charts"
 }

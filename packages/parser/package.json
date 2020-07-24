@@ -1,10 +1,9 @@
 {
   "name": "@code-blocks/parser",
   "version": "0.0.0",
-  "description": "> TODO: description",
-  "author": "Anders <idris.maps@gmx.ch>",
-  "homepage": "",
-  "license": "ISC",
+  "description": "Code block parser",
+  "author": "idris-maps",
+  "license": "GPLv2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "directories": {
@@ -37,5 +36,9 @@
     "@code-blocks/types": "^0.0.0",
     "@types/ramda": "^0.27.6"
   },
-  "gitHead": "7800aa10940af0597843d4b02f2a547f06f657b0"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/idris-maps/code-blocks.git"
+  },
+  "homepage": "https://github.com/idris-maps/code-blocks/tree/master/packages/parser"
 }

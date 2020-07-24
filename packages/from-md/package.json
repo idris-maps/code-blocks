@@ -1,10 +1,9 @@
 {
   "name": "@code-blocks/from-md",
   "version": "0.0.0",
-  "description": "> TODO: description",
-  "author": "Anders <idris.maps@gmx.ch>",
-  "homepage": "",
-  "license": "ISC",
+  "description": "Get code blocks from markdown",
+  "author": "idris-maps",
+  "license": "GPLv2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -29,5 +28,9 @@
   "devDependencies": {
     "@code-blocks/types": "^0.0.0"
   },
-  "gitHead": "7ace617f883c23290eca5cf4571bc19f824885fd"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/idris-maps/code-blocks.git"
+  },
+  "homepage": "https://github.com/idris-maps/code-blocks/tree/master/packages/from-md"
 }

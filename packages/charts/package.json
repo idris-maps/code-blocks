@@ -1,10 +1,9 @@
 {
   "name": "@code-blocks/charts",
   "version": "0.0.0",
-  "description": "> TODO: description",
-  "author": "Anders <idris.maps@gmx.ch>",
-  "homepage": "",
-  "license": "ISC",
+  "description": "Create svg charts from code blocks",
+  "author": "idris-maps",
+  "license": "GPLv2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "directories": {
@@ -34,5 +33,10 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/idris-maps/code-blocks.git"
+  },
+  "homepage": "https://github.com/idris-maps/code-blocks/tree/master/packages/charts"
 }

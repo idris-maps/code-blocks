@@ -1,10 +1,9 @@
 {
   "name": "@code-blocks/types",
   "version": "0.0.0",
-  "description": "> TODO: description",
-  "author": "Anders <idris.maps@gmx.ch>",
-  "homepage": "",
-  "license": "ISC",
+  "description": "Types...",
+  "author": "idris-maps",
+  "license": "GPLv2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -14,7 +13,11 @@
     "test": "echo \"@code-blocks/types has no tests\"",
     "build": "tsc"
   },
-  "gitHead": "a2f544787b33dc5f5552e37b097436816dcdf9c3",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/idris-maps/code-blocks.git"
+  },
+  "homepage": "https://github.com/idris-maps/code-blocks/tree/master/packages/types",
   "publishConfig": {
     "access": "public"
   }
