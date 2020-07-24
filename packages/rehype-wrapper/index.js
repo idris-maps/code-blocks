@@ -28,7 +28,7 @@ module.exports = (renderer, languages) => () => {
         })
           .then(({ content }) => svg2ast(content))
           .then(({ properties, children }) => {
-            parent.tagName = 'svg'
+            parent.tagName = 'div'
             parent.properties = properties
             parent.children = children
           })

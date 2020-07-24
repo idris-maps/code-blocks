@@ -1,11 +1,12 @@
 # `@code-blocks/rehype-wrapper`
 
-> TODO: description
+A wrapper to create a [rehype](https://unifiedjs.com/explore/package/rehype/) transformer from  `code-blocks`.
 
 ## Usage
 
 ```
-const rehypeWrapper = require('@code-blocks/rehype-wrapper');
+const rehypeWrapper = require('@code-blocks/rehype-wrapper')
+const charts = require('@code-blocks/charts')
 
-// TODO: DEMONSTRATE API
+const transformer = rehypeWrapper(charts.default, charts.acceptedLanguages)
 ```
