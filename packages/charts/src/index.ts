@@ -1,4 +1,4 @@
-import { Renderer, LanguagesToParse, Part, isPartCode } from '@code-blocks/types'
+import { Renderer, LanguagesToParse, Part, isPartCode, DsvDataItem, Meta } from '@code-blocks/types'
 import { getMeta, parseDsv, parseJson } from '@code-blocks/parser'
 import areaChart from './area'
 import barChart from './bar'
@@ -10,12 +10,19 @@ import { renderVega, renderVegalite } from './vega'
 const wrapInDiv = (svg: string) =>
   `<div class="chart">${svg}</div>`
 
+type DsvRenderer = (dsv: { head: string[], data: DsvDataItem[] }, meta?: Meta) => Promise<string>
+
+const renderDsvChart = (dsvRenderer: DsvRenderer) => (data: string) => {
+  const { meta, content } = getMeta(data)
+  return dsvRenderer(parseDsv(',')(content), meta)
+}
+
 const chartRenderers = [
-  { language: 'area-chart', render: (content: string) => areaChart(parseDsv(',')(content), getMeta(content)) },
-  { language: 'bar-chart', render: (content: string) => barChart(parseDsv(',')(content), getMeta(content)) },
-  { language: 'line-chart', render: (content: string) => lineChart(parseDsv(',')(content), getMeta(content)) },
-  { language: 'multiline-chart', render: (content: string) => multilineChart(parseDsv(',')(content), getMeta(content)) },
-  { language: 'pie-chart', render: (content: string) => pieChart(parseDsv(',')(content), getMeta(content)) },
+  { language: 'area-chart', render: renderDsvChart(areaChart) },
+  { language: 'bar-chart', render: renderDsvChart(barChart) },
+  { language: 'line-chart', render: renderDsvChart(lineChart) },
+  { language: 'multiline-chart', render: renderDsvChart(multilineChart) },
+  { language: 'pie-chart', render: renderDsvChart(pieChart) },
   { language: 'vega', render: (content: string) =>  renderVega(parseJson(content)) },
   { language: 'vegalite', render: (content: string) => renderVegalite(parseJson(content)) },
 ]

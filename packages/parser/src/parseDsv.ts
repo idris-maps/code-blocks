@@ -1,4 +1,4 @@
-import { trim } from 'ramda'
+import { trim, isNil, path } from 'ramda'
 import { DsvDataItem } from '@code-blocks/types'
 
 const castType = (cell: string): boolean | number | string => {
@@ -25,6 +25,11 @@ export default (separator: string) =>
           [String(key)]: castType(line[i]),
         }), {})
       )
+      .filter(d =>
+        Object.keys(d).length === head.length
+        && Object.keys(d).every(key => !isNil(path([key], d)))
+      )
+
     if (data.length === 0) {
       throw new Error(`
         Could not parse as DSV with "${separator}" separator:
