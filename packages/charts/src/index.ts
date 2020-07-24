@@ -20,7 +20,7 @@ const chartRenderers = [
   { language: 'vegalite', render: (content: string) => renderVegalite(parseJson(content)) },
 ]
 
-const acceptedLanguages = chartRenderers.map(d => d.language)
+export const acceptedLanguages = chartRenderers.map(d => d.language)
 
 const renderer: Renderer = (languages: LanguagesToParse = '*') => {
 

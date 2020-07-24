@@ -1,0 +1,38 @@
+{
+  "name": "@code-blocks/rehype-wrapper",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Anders <idris.maps@gmx.ch>",
+  "homepage": "",
+  "license": "ISC",
+	"main": "index.js",
+	"types": "index.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "ava --verbose"
+  },
+  "dependencies": {
+    "@code-blocks/types": "^0.0.0",
+    "hast-util-from-parse5": "^6.0.0",
+    "hast-util-to-string": "^1.0.4",
+    "mdast": "^3.0.0",
+    "parse5": "^6.0.1",
+    "unist-util-visit": "^2.0.3"
+  },
+  "devDependencies": {
+    "@code-blocks/charts": "^0.0.0",
+    "ava": "^3.10.1",
+    "rehype-stringify": "^8.0.0",
+    "remark-parse": "^8.0.3",
+    "remark-rehype": "^7.0.0",
+    "unified": "^9.1.0"
+  }
+}
