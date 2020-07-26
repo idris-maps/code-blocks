@@ -47,6 +47,7 @@ const renderer: Renderer = (languages: LanguagesToParse = '*') => {
 
   }
 }
+
 export default renderer
 
 

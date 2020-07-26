@@ -15,7 +15,7 @@
   "scripts": {
     "test": "ava",
     "build": "tsc",
-    "test:verbose": "ava --verbose"
+    "test:verbose": "ava"
   },
   "dependencies": {
     "@code-blocks/parser": "^0.0.1",

@@ -1,0 +1,33 @@
+{
+  "name": "@code-blocks/music",
+  "version": "0.0.1",
+  "description": "Create music sheets from code blocks",
+  "author": "idris-maps",
+  "license": "GPLv2",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc && npm run cp-assets",
+    "cp-assets": "cp -r src/assets dist/assets",
+    "get-abc": "curl https://raw.githubusercontent.com/paulrosen/abcjs/master/bin/abcjs_basic_5.10.3-min.js > src/assets/abc.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/idris-maps/code-blocks.git"
+  },
+  "homepage": "https://github.com/idris-maps/code-blocks/tree/master/packages/music",
+  "dependencies": {
+    "jsdom": "^16.3.0"
+  },
+  "devDependencies": {
+    "@code-blocks/types": "^0.0.1",
+    "@types/jsdom": "^16.2.3",
+    "ts-node": "^8.10.2"
+  }
+}
