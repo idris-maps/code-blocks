@@ -1,0 +1,42 @@
+{
+  "name": "@code-blocks/eleventy-plugin",
+  "version": "0.0.1",
+  "description": "An eleventy plugin to parse code blocks",
+  "keywords": [
+    "eleventy",
+    "11ty",
+    "eleventy-plugin",
+    "codeblock"
+  ],
+  "author": "idris-maps",
+  "homepage": "https://github.com/idris-maps/code-blocks#readme",
+  "license": "GPLv2",
+  "main": ".eleventy.js",
+  "directories": {
+    "dist": "dist"
+  },
+  "files": [
+    "**/*"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idris-maps/code-blocks.git"
+  },
+  "scripts": {
+    "test": "echo \"There are no tests for eleventy-plugin",
+    "build": "tsc"
+  },
+  "bugs": {
+    "url": "https://github.com/idris-maps/code-blocks/issues"
+  },
+  "devDependencies": {
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "@code-blocks/from-html": "^0.0.1",
+    "@code-blocks/types": "^0.0.1"
+  }
+}
