@@ -1,0 +1,35 @@
+{
+  "name": "@code-blocks/tables",
+  "version": "0.0.1",
+  "description": "Create tables from csv code blocks",
+  "author": "idris-maps",
+  "license": "GPLv2",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "directories": {
+    "dist": "dist"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idris-maps/code-blocks.git"
+  },
+  "scripts": {
+    "test": "echo \"There are no tests for table\"",
+    "build": "tsc"
+  },
+  "bugs": {
+    "url": "https://github.com/idris-maps/code-blocks/issues"
+  },
+  "homepage": "https://github.com/idris-maps/code-blocks/tree/master/packages/tables",
+  "dependencies": {
+    "@code-blocks/parser": "^0.0.1",
+    "@code-blocks/types": "^0.0.1",
+    "xml-string": "^2.0.2"
+  }
+}

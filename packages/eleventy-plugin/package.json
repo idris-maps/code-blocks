@@ -9,7 +9,7 @@
     "codeblock"
   ],
   "author": "idris-maps",
-  "homepage": "https://github.com/idris-maps/code-blocks#readme",
+  "homepage": "https://github.com/idris-maps/code-blocks/tree/master/packages/eleventy-plugin",
   "license": "GPLv2",
   "main": ".eleventy.js",
   "directories": {
@@ -26,7 +26,7 @@
     "url": "git+https://github.com/idris-maps/code-blocks.git"
   },
   "scripts": {
-    "test": "echo \"There are no tests for eleventy-plugin",
+    "test": "echo \"There are no tests for eleventy-plugin\"",
     "build": "tsc"
   },
   "bugs": {
