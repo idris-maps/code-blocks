@@ -1,0 +1,48 @@
+{
+  "name": "@code-blocks/graphviz",
+  "version": "0.0.1",
+  "description": "Create graphviz diagram from code blocks",
+  "author": "idris-maps",
+  "license": "GPLv2",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "directories": {
+    "dist": "dist"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "ava",
+    "build": "tsc",
+    "test:verbose": "ava --verbose"
+  },
+  "dependencies": {
+    "@code-blocks/parser": "^0.0.1",
+    "@code-blocks/types": "^0.0.1",
+    "parse5": "^6.0.1",
+    "viz.js": "^2.1.2"
+  },
+  "ava": {
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/idris-maps/code-blocks.git"
+  },
+  "homepage": "https://github.com/idris-maps/code-blocks/tree/master/packages/graphviz",
+  "devDependencies": {
+    "@types/parse5": "^5.0.3",
+    "@types/viz.js": "^2.1.0",
+    "ava": "^3.11.0",
+    "typescript": "^3.9.7"
+  }
+}
