@@ -50,7 +50,6 @@ const fixSvg = (node: Node): string =>
     )
   )
 
-
 export default async (data: string, options?: any) => {
   const viz = new Viz({ Module, render })
   const svg = await viz.renderString(data, options)

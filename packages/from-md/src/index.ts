@@ -1,7 +1,5 @@
 import { Part, LanguagesToParse, parseAllLanguages } from '@code-blocks/types'
 
-
-
 export default (md: string, languages: LanguagesToParse): Part[] =>
   md.split('```')
     .map((d, i) =>
