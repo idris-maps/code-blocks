@@ -4,8 +4,8 @@ import render from './render'
 
 export const acceptedLanguages = ['graphviz']
 
-const wrapInDiv = (svg: string) =>
-  `<div class="diagram">${svg}</div>`
+const wrapInDiv = (svg: string, className: string = 'diagram') =>
+  `<div class="${className}">${svg}</div>`
 
 const replace = (toRemove: string, toAdd: string) =>
   (string: string) =>
@@ -35,13 +35,12 @@ const renderer: Renderer = (languages: LanguagesToParse) => {
     try {
       return {
         type: 'other',
-        content: wrapInDiv(await render(fixContent(content), meta)),
+        content: wrapInDiv(await render(fixContent(content), meta), meta.className),
       }
     } catch (err) {
       return part
     }
   }
 }
-
 
 export default renderer

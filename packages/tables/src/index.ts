@@ -7,7 +7,7 @@ const renderTable = (separator: string) =>
     const { meta, content } = getMeta(code)
     const { head, data } = parseDsv(meta.separator || separator)(content)
 
-    const div = createXml.create('div').attr({ 'class': 'table-container' })
+    const div = createXml.create('div').attr({ 'class': meta.className || 'table-container' })
     const table = div.child('table')
   
     const thead = table.child('thead').child('tr')

@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/idris-maps/code-blocks/tree/master/packages/music",
   "dependencies": {
+    "@code-blocks/parser": "^0.0.1",
     "jsdom": "^16.3.0"
   },
   "devDependencies": {

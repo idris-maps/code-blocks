@@ -7,13 +7,12 @@ import multilineChart from './multiline'
 import pieChart from './pie'
 import { renderVega, renderVegalite } from './vega'
 
-const wrapInDiv = (svg: string) =>
-  `<div class="chart">${svg}</div>`
+const wrapInDiv = (svg: string, className: string = 'chart') =>
+  `<div class="${className}">${svg}</div>`
 
-type DsvRenderer = (dsv: { head: string[], data: DsvDataItem[] }, meta?: Meta) => Promise<string>
+type DsvRenderer = (dsv: { head: string[], data: DsvDataItem[] }, meta: Meta) => Promise<string>
 
-const renderDsvChart = (dsvRenderer: DsvRenderer) => (data: string) => {
-  const { meta, content } = getMeta(data)
+const renderDsvChart = (dsvRenderer: DsvRenderer) => (content: string, meta: Meta = {}) => {
   return dsvRenderer(parseDsv(',')(content), meta)
 }
 
@@ -42,12 +41,9 @@ const renderer: Renderer = (languages: LanguagesToParse = '*') => {
 
     const func = chartRenderers.find(({ language }) => language === part.language)
     if (!func) { return part }
-
-    return { type: 'other', content: wrapInDiv(await func.render(part.content)) }
-
+    const { meta, content } = getMeta(part.content)
+    return { type: 'other', content: wrapInDiv(await func.render(content, meta), meta.className) }
   }
 }
 
 export default renderer
-
-
