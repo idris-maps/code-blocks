@@ -1,6 +1,6 @@
 {
   "name": "@code-blocks/from-html",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Get code blocks from HTML",
   "author": "idris-maps",
   "license": "GPLv2",
@@ -18,7 +18,7 @@
     "test:verbose": "ava --verbose"
   },
   "dependencies": {
-    "@code-blocks/types": "^0.0.2",
+    "@code-blocks/types": "^0.1.0",
     "ramda": "^0.27.0"
   },
   "devDependencies": {
