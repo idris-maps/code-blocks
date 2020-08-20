@@ -5,7 +5,7 @@ import { getMeta } from '@code-blocks/parser'
 const wrapInDiv = (svg: string, className: string = 'music-sheet') =>
   `<div class="${className}">${svg}</div>`
 
-const acceptedLanguages = [
+export const acceptedLanguages = [
   'music-abc'
 ]
 

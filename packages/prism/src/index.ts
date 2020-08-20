@@ -1,6 +1,8 @@
 import { Renderer, LanguagesToParse, Part, isPartCode } from '@code-blocks/types'
-import { registered, highlight } from 'refractor'
+import { registered, highlight, listLanguages } from 'refractor'
 import rehype from 'rehype'
+
+export const acceptedLanguages = listLanguages()
 
 const replace = (toRemove: string, toAdd: string) =>
   (string: string) =>
