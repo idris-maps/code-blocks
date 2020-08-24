@@ -20,6 +20,12 @@ const extractDiv = page => {
   const rootChildren = page && page.children ? page.children : []
   const inHtml = getChildrenOf('html', rootChildren)
   const inBody = getChildrenOf('body', inHtml)
+  if (inBody[0].tagName === 'pre') {
+    return {
+      properties: {},
+      children: inBody,
+    }
+  }
   return {
     properties: getPropertiesOf('div', inBody),
     children: getChildrenOf('div', inBody),
