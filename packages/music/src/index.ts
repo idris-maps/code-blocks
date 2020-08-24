@@ -6,7 +6,8 @@ const wrapInDiv = (svg: string, className: string = 'music-sheet') =>
   `<div class="${className}">${svg}</div>`
 
 export const acceptedLanguages = [
-  'music-abc'
+  'music-abc',
+  'music-sheet',
 ]
 
 const renderer: Renderer = (languages: LanguagesToParse = '*') => {
