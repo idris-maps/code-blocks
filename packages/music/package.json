@@ -1,6 +1,6 @@
 {
   "name": "@code-blocks/music",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "description": "Create music sheets from code blocks",
   "author": "idris-maps",
   "license": "GPLv2",
