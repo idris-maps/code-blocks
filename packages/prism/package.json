@@ -13,7 +13,8 @@
     "access": "public"
   },
   "scripts": {
-    "build": "tsc"
+    "prepare:languages": "node prepareLangs > src/languages.ts",
+    "build": "npm run prepare:languages && tsc"
   },
   "repository": {
     "type": "git",
