@@ -1,6 +1,6 @@
 {
   "name": "@code-blocks/graphviz",
-  "version": "0.1.0",
+  "version": "0.1.5",
   "description": "Create graphviz diagram from code blocks",
   "author": "idris-maps",
   "license": "GPLv2",
