@@ -41,5 +41,6 @@
   "devDependencies": {
     "ava": "^3.12.1",
     "typescript": "^4.0.2"
-  }
+  },
+  "gitHead": "ab86e49901818ce60f17e37327bc1d2af377c6de"
 }
