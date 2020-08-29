@@ -9,5 +9,5 @@ test('graphviz renderer', async t => {
   })
   t.is(type, 'other')
   t.is(typeof content, 'string')
-  t.true(content.startsWith('<svg'))
+  t.true(content.includes('<svg'))
 })

@@ -1,0 +1,45 @@
+{
+  "name": "@code-blocks/math",
+  "version": "0.1.0",
+  "description": "Create MathML from code blocks",
+  "author": "idris-maps",
+  "license": "GPLv2",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "directories": {
+    "dist": "dist"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "ava",
+    "build": "tsc",
+    "test:verbose": "ava --verbose"
+  },
+  "dependencies": {
+    "@code-blocks/parser": "^0.1.0",
+    "@code-blocks/types": "^0.1.0",
+    "mathup": "^1.0.0-beta.2"
+  },
+  "ava": {
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/idris-maps/code-blocks.git"
+  },
+  "homepage": "https://github.com/idris-maps/code-blocks/tree/master/packages/math",
+  "devDependencies": {
+    "ava": "^3.12.1",
+    "typescript": "^4.0.2"
+  }
+}
