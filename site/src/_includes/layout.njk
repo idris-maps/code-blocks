@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="idris-maps">
+    <meta name="description" content="{{description}}">
+    <meta property="og:image" content="https://idris-maps.com/assets/images/idris-maps.svg">
+    <meta property="og:description" content="{{description}}">
+    <meta property="og:title" content="{{title}}">
+    <meta name="twitter:title" content="{{title}}">
+    <title>{{title}}</title>
+    {% set css %}
+      {% include "style.css" %}
+      {% include "prism.css" %}
+    {% endset %}
+    <style>
+      {{ css | cssmin | safe }}
+    </style>
+  </head>
+  <body>
+    {% include "header.njk" %}
+    <main>
+      {{ content | safe }}
+    </main>
+  </body>
+</html>

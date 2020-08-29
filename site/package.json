@@ -1,0 +1,19 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "@code-blocks documentation",
+  "scripts": {
+    "build": "rm -rf dist && npx eleventy --input=src --output=dist --serve --formats=md"
+  },
+  "devDependencies": {
+    "@code-blocks/charts": "^0.1.0",
+    "@code-blocks/eleventy-plugin": "^0.1.0",
+    "@code-blocks/graphviz": "^0.1.5",
+    "@code-blocks/math": "^0.1.5",
+    "@code-blocks/music": "^0.1.3",
+    "@code-blocks/prism": "^0.1.2",
+    "@code-blocks/tables": "^0.1.0",
+    "clean-css": "^4.2.3",
+    "eleventy": "^1.0.6"
+  }
+}
