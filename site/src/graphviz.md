@@ -1,7 +1,9 @@
 ---
 layout: layout.njk
 title: "@code-blocks/graphviz"
+short: "Graphviz diagrams"
 description: "Draw graphviz diagrams in markdown code blocks"
+tags: renderer
 ---
 
 ## Install
@@ -10,13 +12,13 @@ description: "Draw graphviz diagrams in markdown code blocks"
 npm install @code-blocks/graphviz
 ```
 
-Use with [rehype](https://github.com/rehypejs/rehype) or [eleventy](https://www.11ty.dev/). See how on [here](/).
+Use with [rehype](https://github.com/rehypejs/rehype) or [eleventy](https://www.11ty.dev/). See how [here](/).
 
 ## Usage
 
 **language: `graphviz`**
 
-For information on the syntax, checkout the [graphviz documentation](https://graphviz.org/).
+This package uses [viz.js](https://github.com/mdaines/viz.js). Try the online editor, [here](http://viz-js.com/). For information on the syntax, checkout the [graphviz documentation](https://graphviz.org/).
 
 ### A basic example
 
@@ -173,9 +175,7 @@ size="7,7";
 }
 ```
 
-### A sequence diagram
-
-Based on [this stackoverflow answer](https://stackoverflow.com/questions/1491322/graphviz-top-to-bottom-and-left-to-right). 
+### A sequence diagram 
 
 ```
 digraph SEQ_DIAGRAM {
@@ -257,3 +257,4 @@ digraph SEQ_DIAGRAM {
 }
 ```
 
+Based on [this stackoverflow answer](https://stackoverflow.com/questions/1491322/graphviz-top-to-bottom-and-left-to-right).

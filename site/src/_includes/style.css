@@ -19,7 +19,7 @@ body {
   color: var(--main)
 }
 
-@media (max-width: 700px) { body { font-size: 20px; } }
+@media (max-width: 800px) { body { font-size: 20px; } }
 @media (max-width: 450px) { body { font-size: 16px; } }
 @media (max-width: 350px) { body { font-size: 14px; } }
 
@@ -28,6 +28,21 @@ header a { text-decoration: none; }
 header svg { height: 1em; }
 header .ticks { fill: var(--primary) }
 header .ticks-background { fill: var(--primary-dark) }
+@media (max-width: 600px) {
+  header h1 span { font-size: 0.7em; }
+}
+@media (max-width: 400px) {
+  header h1 span { font-size: 0.6em; }
+}
+
+footer { background-color: var(--bg-dark); padding: 1em; }
+footer .current a { color: var(--main); text-decoration: none; }
+footer ul { list-style-type: none; }
+footer .links { width: 100%; text-align: center; }
+footer .links svg { height: 2em; margin-top: 2em; }
+@media (min-width: 1000px) {
+  footer ul { display: flex; justify-content: space-evenly; }
+}
 
 main {
   width: 90%;
@@ -56,9 +71,9 @@ pre {
 
 a {
   color: var(--primary);
+  text-decoration-style: dotted;
+  text-decoration-thickness: 0.05em;
 }
-
-
 
 table {
   border-collapse: collapse;
@@ -76,6 +91,11 @@ tbody tr:hover {
   color: var(--bg);
 }
 
+.chart {
+  background: var(--main);
+  max-width: 1000px;
+  margin: auto;
+}
 
 .music-sheet {
   background-color: var(--main);

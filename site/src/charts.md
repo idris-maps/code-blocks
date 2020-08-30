@@ -1,7 +1,9 @@
 ---
 layout: layout.njk
 title: "@code-blocks/charts"
+short: "Charts"
 description: "Draw charts in markdown code blocks"
+tags: renderer
 ---
 
 ## Install
@@ -10,7 +12,7 @@ description: "Draw charts in markdown code blocks"
 npm install @code-blocks/charts
 ```
 
-Use with [rehype](https://github.com/rehypejs/rehype) or [eleventy](https://www.11ty.dev/). See how on [here](/).
+Use with [rehype](https://github.com/rehypejs/rehype) or [eleventy](https://www.11ty.dev/). See how [here](/).
 
 ## Bar chart
 
@@ -273,8 +275,7 @@ All charts are drawn with [vegalite](https://vega.github.io/vega-lite/). You can
   "data": {
     "values": [
       {"a": "A", "b": 28}, {"a": "B", "b": 55}, {"a": "C", "b": 43},
-      {"a": "D", "b": 91}, {"a": "E", "b": 81}, {"a": "F", "b": 53},
-      {"a": "G", "b": 19}, {"a": "H", "b": 87}, {"a": "I", "b": 52}
+      {"a": "D", "b": 91}, {"a": "E", "b": 81}, {"a": "F", "b": 53}
     ]
   },
   "mark": "bar",
@@ -293,8 +294,7 @@ All charts are drawn with [vegalite](https://vega.github.io/vega-lite/). You can
   "data": {
     "values": [
       {"a": "A", "b": 28}, {"a": "B", "b": 55}, {"a": "C", "b": 43},
-      {"a": "D", "b": 91}, {"a": "E", "b": 81}, {"a": "F", "b": 53},
-      {"a": "G", "b": 19}, {"a": "H", "b": 87}, {"a": "I", "b": 52}
+      {"a": "D", "b": 91}, {"a": "E", "b": 81}, {"a": "F", "b": 53}
     ]
   },
   "mark": "bar",
@@ -331,9 +331,7 @@ Vegalite is based on [vega](https://vega.github.io/vega/).
         {"category": "C", "amount": 43},
         {"category": "D", "amount": 91},
         {"category": "E", "amount": 81},
-        {"category": "F", "amount": 53},
-        {"category": "G", "amount": 19},
-        {"category": "H", "amount": 87}
+        {"category": "F", "amount": 53}
       ]
     }
   ],
@@ -394,9 +392,7 @@ Vegalite is based on [vega](https://vega.github.io/vega/).
         {"category": "C", "amount": 43},
         {"category": "D", "amount": 91},
         {"category": "E", "amount": 81},
-        {"category": "F", "amount": 53},
-        {"category": "G", "amount": 19},
-        {"category": "H", "amount": 87}
+        {"category": "F", "amount": 53}
       ]
     }
   ],

@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "@code-blocks documentation",
   "scripts": {
-    "build": "rm -rf dist && npx eleventy --input=src --output=dist --serve --formats=md"
+    "dev": "rm -rf dist && npx eleventy --input=src --output=dist --serve --formats=md",
+    "build": "rm -rf dist && npx eleventy --input=src --output=dist --formats=md",
+    "deploy": "surge dist code-blocks.surge.sh",
+    "publish": "npm run build && npm run deploy"
   },
   "devDependencies": {
     "@code-blocks/charts": "^0.1.0",

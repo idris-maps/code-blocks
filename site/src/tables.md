@@ -1,7 +1,9 @@
 ---
 layout: layout.njk
 title: "@code-blocks/tables"
+short: "HTML tables"
 description: "Easy HTML tables in markdown with code blocks"
+tags: renderer
 ---
 
 ## Install
@@ -10,7 +12,7 @@ description: "Easy HTML tables in markdown with code blocks"
 npm install @code-blocks/tables
 ```
 
-Use with [rehype](https://github.com/rehypejs/rehype) or [eleventy](https://www.11ty.dev/). See how on [here](/).
+Use with [rehype](https://github.com/rehypejs/rehype) or [eleventy](https://www.11ty.dev/). See how [here](/).
 
 ## Usage
 

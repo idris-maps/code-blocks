@@ -1,7 +1,9 @@
 ---
 layout: layout.njk
 title: "@code-blocks/math"
+short: "MathML"
 description: "Use mathup in markdown code blocks"
+tags: renderer
 ---
 
 ## Install
@@ -10,7 +12,7 @@ description: "Use mathup in markdown code blocks"
 npm install @code-blocks/math
 ```
 
-Use with [rehype](https://github.com/rehypejs/rehype) or [eleventy](https://www.11ty.dev/). See how on [here](/).
+Use with [rehype](https://github.com/rehypejs/rehype) or [eleventy](https://www.11ty.dev/). See how [here](/).
 
 ## Usage
 
