@@ -30,4 +30,4 @@ K: Emin
 	"D"afe^c dBAF|"Em"DEFD E2:|
 ```
 
-![Music sheet example](https://raw.githubusercontent.com/idris-maps/code-blocks/master/assets/example_music).png)
+![Music sheet example](https://raw.githubusercontent.com/idris-maps/code-blocks/master/assets/example_music.png)
