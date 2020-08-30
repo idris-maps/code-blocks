@@ -1,6 +1,6 @@
 {
   "name": "@code-blocks/prism",
-  "version": "0.1.2",
+  "version": "0.1.6",
   "description": "Highlight code blocks with prism",
   "author": "idris-maps",
   "license": "GPLv2",

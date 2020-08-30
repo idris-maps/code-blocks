@@ -1,6 +1,6 @@
 {
   "name": "@code-blocks/tables",
-  "version": "0.1.0",
+  "version": "0.1.6",
   "description": "Create tables from csv code blocks",
   "author": "idris-maps",
   "license": "GPLv2",
