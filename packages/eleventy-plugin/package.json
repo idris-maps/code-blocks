@@ -9,7 +9,7 @@
     "codeblock"
   ],
   "author": "idris-maps",
-  "homepage": "https://github.com/idris-maps/code-blocks/tree/master/packages/eleventy-plugin",
+  "homepage": "https://code-blocks.surge.sh",
   "license": "GPLv2",
   "main": ".eleventy.js",
   "directories": {

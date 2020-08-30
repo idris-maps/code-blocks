@@ -38,5 +38,5 @@
     "type": "git",
     "url": "https://github.com/idris-maps/code-blocks.git"
   },
-  "homepage": "https://github.com/idris-maps/code-blocks/tree/master/packages/charts"
+  "homepage": "https://code-blocks.surge.sh/charts"
 }

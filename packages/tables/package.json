@@ -26,7 +26,7 @@
   "bugs": {
     "url": "https://github.com/idris-maps/code-blocks/issues"
   },
-  "homepage": "https://github.com/idris-maps/code-blocks/tree/master/packages/tables",
+  "homepage": "https://code-blocks.surge.sh/tables",
   "dependencies": {
     "@code-blocks/parser": "^0.1.0",
     "@code-blocks/types": "^0.1.0",

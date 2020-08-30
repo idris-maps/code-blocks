@@ -37,7 +37,7 @@
     "type": "git",
     "url": "https://github.com/idris-maps/code-blocks.git"
   },
-  "homepage": "https://github.com/idris-maps/code-blocks/tree/master/packages/math",
+  "homepage": "https://code-blocks.surge.sh/math",
   "devDependencies": {
     "ava": "^3.12.1",
     "typescript": "^4.0.2"

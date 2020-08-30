@@ -20,7 +20,7 @@
     "type": "git",
     "url": "https://github.com/idris-maps/code-blocks.git"
   },
-  "homepage": "https://github.com/idris-maps/code-blocks/tree/master/packages/prism",
+  "homepage": "https://code-blocks.surge.sh/prism",
   "dependencies": {
     "refractor": "^3.1.0",
     "rehype": "^11.0.0"
