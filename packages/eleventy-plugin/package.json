@@ -1,6 +1,6 @@
 {
   "name": "@code-blocks/eleventy-plugin",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "An eleventy plugin to parse code blocks",
   "keywords": [
     "eleventy",
