@@ -10,5 +10,6 @@
   },
   "scripts": {
     "publish": "lerna run build && lerna publish"
-  }
+  },
+  "homepage": "https://code-blocks.surge.sh"
 }
