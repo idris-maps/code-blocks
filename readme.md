@@ -22,7 +22,7 @@ DDAA|BBA2|
 
 will be rendered as:
 
-![Music sheet example](/assets/home-example.png)
+![Music sheet example](https://raw.githubusercontent.com/idris-maps/code-blocks/master/assets/home-example.png)
 
 ## Usage with [rehype](https://github.com/rehypejs/rehype)
 
