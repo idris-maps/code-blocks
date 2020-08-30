@@ -2,13 +2,13 @@
 
 Use markdown code blocks to render:
 
-* [Charts](/charts) 
-* [Graphviz diagrams](/graphviz)
-* [MathML](/math)
-* [Music sheets](/music)
-* [HTML tables](/tables)
+* [Charts](https://github.com/idris-maps/code-blocks/tree/master/packages/charts) 
+* [Graphviz diagrams](https://github.com/idris-maps/code-blocks/tree/master/packages/graphviz)
+* [MathML](https://github.com/idris-maps/code-blocks/tree/master/packages/math)
+* [Music sheets](https://github.com/idris-maps/code-blocks/tree/master/packages/music)
+* [HTML tables](https://github.com/idris-maps/code-blocks/tree/master/packages/tables)
 
-and [highlight code](/prism).
+and [highlight code](https://github.com/idris-maps/code-blocks/tree/master/packages/prism).
 
 `@code-blocks` can be used either as a [rehype](https://github.com/rehypejs/rehype) transform or as an [eleventy](https://www.11ty.dev/) plugin.
 
