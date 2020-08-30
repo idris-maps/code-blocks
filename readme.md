@@ -22,7 +22,7 @@ DDAA|BBA2|
 
 will be rendered as:
 
-![Music sheet example](/assets/home-example.svg)
+![Music sheet example](/assets/home-example.png)
 
 ## Usage with [rehype](https://github.com/rehypejs/rehype)
 
