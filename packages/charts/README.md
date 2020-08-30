@@ -6,7 +6,7 @@
 npm install @code-blocks/charts
 ```
 
-Use with [rehype](https://github.com/rehypejs/rehype) or [eleventy](https://www.11ty.dev/). See how [here](/).
+Use with [rehype](https://github.com/rehypejs/rehype) or [eleventy](https://www.11ty.dev/). See how [here](https://github.com/idris-maps/code-blocks).
 
 ## Bar chart
 
