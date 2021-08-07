@@ -1,6 +1,6 @@
 {
   "name": "@code-blocks/rehype-transform",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "A rehype transform to render code blocks",
   "author": "idris-maps",
   "license": "GPLv2",
