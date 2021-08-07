@@ -1,6 +1,6 @@
 {
   "name": "@code-blocks/charts",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Create svg charts from code blocks",
   "author": "idris-maps",
   "license": "GPLv2",
