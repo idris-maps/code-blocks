@@ -1,6 +1,6 @@
 {
   "name": "@code-blocks/tables",
-  "version": "0.1.6",
+  "version": "0.1.8",
   "description": "Create tables from csv code blocks",
   "author": "idris-maps",
   "license": "GPLv2",
@@ -28,7 +28,7 @@
   },
   "homepage": "https://code-blocks.surge.sh/tables",
   "dependencies": {
-    "@code-blocks/parser": "^0.1.0",
+    "@code-blocks/parser": "^0.1.8",
     "@code-blocks/types": "^0.1.0",
     "xml-string": "^2.0.2"
   }

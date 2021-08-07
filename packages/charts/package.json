@@ -1,6 +1,6 @@
 {
   "name": "@code-blocks/charts",
-  "version": "0.1.6",
+  "version": "0.1.8",
   "description": "Create svg charts from code blocks",
   "author": "idris-maps",
   "license": "GPLv2",
@@ -18,7 +18,7 @@
     "test:verbose": "ava"
   },
   "dependencies": {
-    "@code-blocks/parser": "^0.1.0",
+    "@code-blocks/parser": "^0.1.8",
     "@code-blocks/types": "^0.1.0",
     "vega": "^5.13.0",
     "vega-lite": "^4.13.1"

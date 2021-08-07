@@ -1,6 +1,6 @@
 {
   "name": "@code-blocks/rehype-transform",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "A rehype transform to render code blocks",
   "author": "idris-maps",
   "license": "GPLv2",
@@ -26,7 +26,7 @@
     "unist-util-visit": "^2.0.3"
   },
   "devDependencies": {
-    "@code-blocks/charts": "^0.1.6",
+    "@code-blocks/charts": "^0.1.8",
     "ava": "^3.10.1",
     "rehype-stringify": "^8.0.0",
     "remark-parse": "^8.0.3",

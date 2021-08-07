@@ -1,6 +1,6 @@
 {
   "name": "@code-blocks/eleventy-plugin",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "An eleventy plugin to parse code blocks",
   "keywords": [
     "eleventy",
@@ -36,7 +36,7 @@
     "typescript": "^3.9.7"
   },
   "dependencies": {
-    "@code-blocks/from-html": "^0.1.0",
+    "@code-blocks/from-html": "^0.1.8",
     "@code-blocks/types": "^0.1.0"
   }
 }

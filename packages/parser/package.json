@@ -1,6 +1,6 @@
 {
   "name": "@code-blocks/parser",
-  "version": "0.1.0",
+  "version": "0.1.8",
   "description": "Code block parser",
   "author": "idris-maps",
   "license": "GPLv2",

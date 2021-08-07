@@ -1,6 +1,6 @@
 {
   "name": "@code-blocks/music",
-  "version": "0.1.6",
+  "version": "0.1.8",
   "description": "Create music sheets from code blocks",
   "author": "idris-maps",
   "license": "GPLv2",
@@ -23,7 +23,7 @@
   },
   "homepage": "https://code-blocks.surge.sh/music",
   "dependencies": {
-    "@code-blocks/parser": "^0.1.0",
+    "@code-blocks/parser": "^0.1.8",
     "jsdom": "^16.3.0"
   },
   "devDependencies": {

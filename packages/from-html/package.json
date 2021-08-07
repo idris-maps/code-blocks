@@ -1,6 +1,6 @@
 {
   "name": "@code-blocks/from-html",
-  "version": "0.1.0",
+  "version": "0.1.8",
   "description": "Get code blocks from HTML",
   "author": "idris-maps",
   "license": "GPLv2",
