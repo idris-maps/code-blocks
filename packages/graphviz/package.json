@@ -42,7 +42,7 @@
   "devDependencies": {
     "@types/parse5": "^5.0.3",
     "@types/viz.js": "^2.1.0",
-    "ava": "^3.11.0",
+    "ava": "^5.2.0",
     "typescript": "^3.9.7"
   },
   "gitHead": "ab86e49901818ce60f17e37327bc1d2af377c6de"
